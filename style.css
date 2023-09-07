@@ -1,0 +1,276 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #ffdbbb;
+  text-align: center;
+}
+
+.hero-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+.hero-title p {
+  font-size: 1.125rem;
+  margin-bottom: 35px;
+}
+
+.btn {
+  background-color: #f07e64;
+  padding: 8px 16px;
+  border: 3px solid #f07e64;
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #222420;
+}
+
+.hero, .skills, .projects, .interests, .contact {
+  padding: 3rem 2rem;
+}
+
+.skills-container, .projects-container, .interests-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills {
+  background-image: url(./images/concrete-bg-yasser-fathy-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.skills-container_skill {
+  border: 3px solid #222420;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+
+.skills-container_skill span {
+  text-transform: uppercase;
+    font-weight: 600;
+}
+
+.projects-container_project {
+  margin-bottom: 40px;
+}
+
+.projects-container_project h3 {
+  border-bottom: 2px solid #222420;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.projects-container_project p {
+  font-style: italic;
+}
+
+.project-img {
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
+  height: 372px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.project-img-camellia {
+  background-image: url(./images/camellia.jpg);
+}
+.project-img-letha {
+  background-image: url(./images/letha.jpg);
+}
+.project-img-enjoy {
+  background-image: url(./images/enjoy.jpg);
+}
+.project-img-js {
+  background-image: url(./images/js.jpg);
+}
+
+.interests {
+  background-color: #ffdbbb;
+  text-align: center;
+}
+
+.interests-container_interest {
+  margin-bottom: 40px;
+}
+
+.interests-container_interest img {
+  max-width: 300px;
+  border-radius: 0.2rem;
+}
+
+.contact {
+  background-color: #f8b190;
+  text-align: center;
+}
+
+.contact a {
+  color: #222420;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-icon {
+  font-size: 2rem;
+    padding: 10px;
+}
+
+footer {
+  background-color: #222420;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.75rem;
+}
+
+@media (min-width: 788px) {
+  .project-img {
+    min-width: 314px;
+    height: 279px;
+  }
+  .projects-container {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .projects-container_project {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .interests-container_interest img {
+  max-width: 350px;
+  }
+}
+
+@media (min-width: 998px) {
+  .interests-container {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .interests h2{
+    text-align: left;
+  }
+  .interests-container_interest {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .interests-container_interest img {
+    height: 220px;
+    width: 300px;
+  }
+  .project-img {
+    min-width: 418px;
+    height: 372px;
+  }
+}
+
+@media (min-width: 1200px) {
+   .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+  .hero-img {
+    margin: 0 60px 50px 0;
+  }
+  .hero-title {
+    text-align: left;
+  }
+  .hero-title h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .skills-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .skills-container_skill {
+    width: 200px;
+    margin: 20px;
+  }
+
+  .interests-container_interest img {
+    height: 220px;
+    width: 350px;
+  }
+
+  .project-img {
+    min-width: 418px;
+    height: 372px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .skills-container_skill {
+    width: 250px;
+  }
+  .skills-container {
+    max-width: 1330px;
+    margin: 0 auto;
+  }
+  .project-img {
+    min-width: 583px;
+    height: 525px;
+  }
+  .projects-container_project {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
